@@ -14,7 +14,7 @@
       {
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
-            zig
+            zig_0_15
             zls  # Zig Language Server
             lldb  # LLVM debugger
           ];
@@ -27,6 +27,6 @@
         };
 
         # Optional: provide zig as a package
-        packages.default = pkgs.zig;
+        packages.default = pkgs.zig_0_15;
       });
 }
